@@ -4,6 +4,14 @@
   "type": "module",
   "description": "让 Cortico bot 听懂 QQ 语音：经 NapCat get_record 把 SILK 转成 WAV，再用本地 SenseVoice 转写。",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banacat06/cortico-world-qq-voice-asr.git"
+  },
+  "homepage": "https://github.com/Banacat06/cortico-world-qq-voice-asr#readme",
+  "bugs": {
+    "url": "https://github.com/Banacat06/cortico-world-qq-voice-asr/issues"
+  },
   "main": "./src/index.ts",
   "engines": {
     "node": ">=22"

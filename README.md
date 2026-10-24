@@ -3,6 +3,8 @@
 让 Cortico bot 听懂你在 QQ 里发的语音。装在 Coopanion 上，和现有的 **QQ_bot（cortico-world-qq-final）** 并存；
 不改 QQ World，不改 NapCat，也不动你的主程序。
 
+源码：https://github.com/Banacat06/cortico-world-qq-voice-asr
+
 ## 它解决的是什么
 
 QQ 语音消息在 NapCat 里是 **SILK v3** 编码（文件名常叫 `.amr`，内容其实是 `#!SILK_V3`）。ffmpeg
