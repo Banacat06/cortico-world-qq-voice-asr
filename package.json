@@ -1,0 +1,51 @@
+{
+  "name": "cortico-world-qq-voice",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "让 Cortico bot 听懂 QQ 语音：经 NapCat get_record 把 SILK 转成 WAV，再用本地 SenseVoice 转写。",
+  "license": "MIT",
+  "main": "./src/index.ts",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "qq",
+    "napcat",
+    "voice",
+    "asr",
+    "语音识别"
+  ],
+  "os": [
+    "win32"
+  ],
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "QQ 语音识别 / QQ Voice",
+    "locales": {
+      "zh": {
+        "displayName": "QQ 语音识别 / QQ Voice",
+        "description": "收到 QQ 语音时，把 SILK 经 NapCat 转码后用本地 SenseVoice 转成文字，让 bot 真正听懂你在 QQ 里说的话。不替换 QQ World，不改它的配置。"
+      },
+      "en": {
+        "displayName": "QQ Voice",
+        "description": "Transcribes QQ voice messages locally: NapCat decodes SILK to WAV, SenseVoice turns it into text. Works alongside the existing QQ World."
+      }
+    }
+  },
+  "files": [
+    "src",
+    "asr_server.py",
+    "ENV_PROMPT.md",
+    "README.md",
+    "LICENSE",
+    "install.ps1",
+    "install.cmd"
+  ],
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/selftest.mjs",
+    "test:live": "node --experimental-strip-types test/live.mjs"
+  }
+}
